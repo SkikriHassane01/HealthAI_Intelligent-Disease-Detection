@@ -1,0 +1,19 @@
+i recomend to download the Todo+ extension from vscode
+Shortcuts like alt+s to start, alt+d to mark as done, and alt+c to cancel the task
+let's started
+
+Todo:
+    ✔ Step 1: Organize the Project Structure @started(24-07-30 12:40) @done(24-07-30 13:06) @lasted(26m9s)
+    ✔ step 2: create the notebooks for evey disease @done(24-08-02 23:05)
+    ✔ step 3: download the models @done(24-08-02 23:06)
+    ✔ Step 4: Install Dependencies @started(24-07-30 12:40) @done(24-07-30 13:06) @lasted(26m21s)
+    ✔ Step 5: Create Flask Application with basic setup @started(24-07-30 12:40) @done(24-07-30 13:06) @lasted(26m24s)
+    ✔ Step 6: Create HTML Templates for the homepage with cards for each disease. @started(24-07-30 13:06) @done(24-07-30 16:58) @lasted(3h52m22s)
+    ✔ Step 7: Style the Application @started(24-07-30 16:58) @done(24-07-31 03:15) @lasted(10h17m48s)
+    ✔ spet 8: add some animation to the index.html @done(24-07-31 12:35)
+    ✔ Step 9: Create Disease Pages @started(24-07-31 12:37) @done(24-07-31 19:20) @lasted(6h43m54s)
+    ✔ step 10: style the disease pages @done(24-07-31 19:21)
+    ✔ Step 11: Add JavaScript for Interactivity @done(24-07-31 19:21)
+    ✔ Step 12: Implement Prediction Logic in Flask @started(24-07-31 19:21) @done(24-08-02 23:04) @lasted(2d3h43m49s)
+    ✔ step 13: add the prediction logic to the frontend @started(24-08-03 19:11) @done(24-08-03 19:11) @lasted(6s)
+    ☐ step 14: deploy the app to Azure @started(24-08-03 19:11)

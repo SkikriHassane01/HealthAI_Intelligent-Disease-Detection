@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HealthAI Intelligent Disease Detection</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('index')}}">Main</a></li>
+                        <li><a href="{{ url_for('disease_page', disease='BreastCan')}}">BreastCan</a></li>
+                        <li><a href="{{ url_for('disease_page', disease='diabetes')}}">Diabetes</a></li>
+                        <li><a href="{{ url_for('disease_page', disease='alzheimer')}}">Alzheimer</a></li>
+                        <li><a href="{{ url_for('disease_page', disease='brain_tumor')}}">brain tumor</a></li>
+                        <li><a href="{{ url_for('disease_page', disease='covid19')}}">Covid 19</a></li>
+                        <li><a href="{{ url_for('disease_page', disease='pneumonia')}}">pneumonia</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <main>
+            <section id="main" class="hero">
+                <h1>HealthAi intelligent disease Detection</h1>
+                <p>Get predictions for various diseases using AI models.</p>
+            </section>
+            <section class="cards">
+
+                <!-- TODO: Card1:  -->
+                <div id="BreastCan" class="card">
+                    <img src="{{ url_for('static', filename='images/breastcan.jpg') }}" alt="Breast Cancer">
+                    <h2>Breast Cancer</h2>
+                    <p>Breast cancer is the most common cancer amongst women in the world. It accounts
+                        for 25% of all cancer cases, and affected over 2.1 Million people in 2015 alone.
+                        It starts when cells in the breast begin to grow out of control. These cells usually
+                        form tumors that can be seen via X-ray or felt as lumps in the breast area
+                    </p>
+                    <a href="{{ url_for('disease_page', disease='BreastCan') }}">Predict</a>
+                </div>
+
+
+                <!-- TODO: Card2:  -->
+                <div id="Diabetes" class="card">
+                    <img src="{{ url_for('static', filename='images/diabetes.jpg') }}" alt="diabetes">
+                    <h2>Diabetes</h2>
+                    <p>Diabetes is a chronic disease that occurs when the body cannot properly use and store 
+                        glucose and sugar. It is a metabolic disorder that affects the body's ability to process 
+                        blood sugar. It is a common disease that affects millions of people worldwide. It can lead
+                        to serious health complications if not managed properly.
+                    </p>
+                    <a href="{{ url_for('disease_page', disease='diabetes') }}">Predict</a>
+
+                </div>
+
+
+                <!-- TODO: Card3:  -->
+                <div id="Alzheimer" class="card">
+                    <img src="{{ url_for('static',filename='images/alzheimer.jpg') }}" alt="alzheimer">
+                    <h2>Alzheimer's Disease</h2>
+                    <p>Alzheimer's disease is a progressive neurological disorder that leads to memory loss, 
+                        cognitive decline, and changes in behavior. It is the most common cause of dementia, 
+                        affecting a person's ability to think, remember, and carry out daily activities. 
+                    </p>
+                    <a href="{{ url_for('disease_page', disease='alzheimer') }}">Predict</a>
+                </div>
+
+                <!-- TODO: Card4:  -->
+                <div id="brain_tumor" class="card">
+                    <img src="{{ url_for('static',filename='images/brain_tumor.jpg') }}" alt="brain tumor">
+                    <h2>Brain Tumor</h2>
+                    <p>A brain tumor is a mass of abnormal cells that grows in the brain. It can be either cancerous or
+                        noncancerous. The tumor may cause an increase in pressure inside the skull, resulting in potential
+                        brain damage and life-threatening consequences.</p>
+                    <a href="{{ url_for('disease_page', disease='brain_tumor') }}">Predict</a>
+
+                </div>
+
+                <!-- TODO: Card5:  -->
+                <div id="Covid19" class="card">
+                    <img src="{{ url_for('static',filename='images/covid19.jpg') }}" alt="covid 19">
+                    <h2>Covid 19</h2>
+                    <p> Covid 19 is caused by the severe acute respiratory
+                        syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China,
+                        and has since led to a global pandemic. The disease is primarily spread through respiratory
+                        droplets, and symptoms can range from mild (or no symptoms) to severe respiratory illness.
+                        </p>
+                    <a href="{{ url_for('disease_page', disease='covid19') }}">Predict</a>
+
+                </div>
+
+                <!-- TODO: Card6:  -->
+                <div id="pneumonia" class="card">
+                    <img src="{{ url_for('static',filename='images/pneumonia.jpg') }}" alt="pneumonia">
+                    <h2>Pneumonia</h2>
+                    <p>Pneumonia is an inflammatory condition of the lung affecting primarily the small air sacs known
+                        as alveoli.Symptoms typically include some combination of productive or dry cough, chest pain, fever
+                        and difficulty breathing. The severity of the condition is variable.</p>
+                    <a href="{{ url_for('disease_page', disease='pneumonia') }}">Predict</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Health AI Platform. All rights reserved.</p>
+        </footer>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>

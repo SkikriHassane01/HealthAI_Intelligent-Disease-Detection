@@ -1,0 +1,78 @@
+.hero h1{
+    color: var(--title-color);
+    font-size:3em;
+    margin: 0.5em 0;
+}
+
+.hero p{
+    font-size: 1.2em;
+}
+/* TODO: Cards section */
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.card{
+    background: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 1em;
+    width: 400px;
+    padding: 1.5em;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.card img{
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.card h2{
+    color: var(--title-color);
+    margin: 0.5em 0;
+    font-size: 1.5em;
+}
+
+.card p{
+    font-size: 1.1em;
+}
+
+.card a{
+    text-decoration: none;
+    display: inline-block;
+    background:  #18181b;
+    margin-top: 1em;
+    padding: 0.8em 1.8em;
+    color: var(--title-color);
+    border-radius: 10px;
+    transition: transform 0.6s ease-out;
+    transform :transformOrigin left;
+
+}
+
+.card a:hover{
+    background-color : rgba(93,188,252,0.3);
+
+    transform: scale(1.05);
+}
+
+
+footer{
+    background: var(--secondary-color);
+    color: var(--title-color);
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+}
+

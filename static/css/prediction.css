@@ -1,0 +1,88 @@
+:root{
+    --primary-color: #18181b;
+    --secondary-color: rgb(39, 39, 42);
+    --title-color: rgb(244, 244, 245);
+    --subtitle-color: rgb(161, 161, 170);
+    --hover-color: #333333;
+    --border: rgba(63, 63, 70, 0.4);
+    --blue: rgb(93,188,252);
+}
+
+.prediction{
+    text-align: center;
+    margin: 30px auto; /* to center this div*/
+    max-width: 600px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,2);
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* repeat the columns with a minimum of 250px and a maximum of 1fr */
+    gap: 1rem; 
+}
+.prediction .input_data li{
+    background-color: var(--primary-color);
+    border: 1px solid var(--hover-color);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Ensure text is centered */
+}
+
+#prediction-result{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.input_data h3{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--title-color);
+}
+
+
+/* for the image prediction */
+
+.prediction h2{
+    color: var(--title-color);
+}
+
+.result {
+    margin-top: 20px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.result img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.result p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--subtitle-color);
+}
+
+
+footer{
+    background: var(--secondary-color);
+    color: var(--title-color);
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+}

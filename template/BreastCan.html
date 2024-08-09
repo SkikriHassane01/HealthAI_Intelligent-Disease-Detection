@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prediction.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Main</a></li>
+                <li><a href="{{ url_for('disease_page', disease='BreastCan') }}">BreastCan</a></li>
+                <li><a href="{{ url_for('disease_page', disease='diabetes') }}">Diabetes</a></li>
+                <li><a href="{{ url_for('disease_page', disease='alzheimer') }}">Alzheimer</a></li>
+                <li><a href="{{ url_for('disease_page', disease='brain_tumor') }}">Brain Tumor</a></li>
+                <li><a href="{{ url_for('disease_page', disease='covid19') }}">Covid 19</a></li>
+                <li><a href="{{ url_for('disease_page', disease='pneumonia') }}">Pneumonia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Breast Cancer Disease Prediction</h1>
+            </section>
+            <form action="{{ url_for('disease_page', disease='BreastCan') }}" method="post" enctype="multipart/form-data" id="normal_prediction">
+                <img src="{{ url_for('static', filename='images/breastcan.jpg') }}" alt="Breast Cancer">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <label for="diagnosis">Diagnosis (M/B):</label>
+                        <input type="text" id="diagnosis" name="diagnosis" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="radius_mean">Radius Mean:</label>
+                        <input type="number" id="radius_mean" name="radius_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="texture_mean">Texture Mean:</label>
+                        <input type="number" id="texture_mean" name="texture_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="perimeter_mean">Perimeter Mean:</label>
+                        <input type="number" id="perimeter_mean" name="perimeter_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="area_mean">Area Mean:</label>
+                        <input type="number" id="area_mean" name="area_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="smoothness_mean">Smoothness Mean:</label>
+                        <input type="number" id="smoothness_mean" name="smoothness_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="compactness_mean">Compactness Mean:</label>
+                        <input type="number" id="compactness_mean" name="compactness_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="concavity_mean">Concavity Mean:</label>
+                        <input type="number" id="concavity_mean" name="concavity_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="concave_points_mean">Concave Points Mean:</label>
+                        <input type="number" id="concave_points_mean" name="concave_points_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="symmetry_mean">Symmetry Mean:</label>
+                        <input type="number" id="symmetry_mean" name="symmetry_mean" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="radius_se">Radius SE:</label>
+                        <input type="number" id="radius_se" name="radius_se" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="perimeter_se">Perimeter SE:</label>
+                        <input type="number" id="perimeter_se" name="perimeter_se" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="area_se">Area SE:</label>
+                        <input type="number" id="area_se" name="area_se" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="compactness_se">Compactness SE:</label>
+                        <input type="number" id="compactness_se" name="compactness_se" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="concavity_se">Concavity SE:</label>
+                        <input type="number" id="concavity_se" name="concavity_se" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="concave_points_se">Concave Points SE:</label>
+                        <input type="number" id="concave_points_se" name="concave_points_se" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="radius_worst">Radius Worst:</label>
+                        <input type="number" id="radius_worst" name="radius_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="texture_worst">Texture Worst:</label>
+                        <input type="number" id="texture_worst" name="texture_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="perimeter_worst">Perimeter Worst:</label>
+                        <input type="number" id="perimeter_worst" name="perimeter_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="area_worst">Area Worst:</label>
+                        <input type="number" id="area_worst" name="area_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="smoothness_worst">Smoothness Worst:</label>
+                        <input type="number" id="smoothness_worst" name="smoothness_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="compactness_worst">Compactness Worst:</label>
+                        <input type="number" id="compactness_worst" name="compactness_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="concavity_worst">Concavity Worst:</label>
+                        <input type="number" id="concavity_worst" name="concavity_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="concave_points_worst">Concave Points Worst:</label>
+                        <input type="number" id="concave_points_worst" name="concave_points_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="symmetry_worst">Symmetry Worst:</label>
+                        <input type="number" id="symmetry_worst" name="symmetry_worst" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="fractal_dimension_worst">Fractal Dimension Worst:</label>
+                        <input type="number" id="fractal_dimension_worst" name="fractal_dimension_worst" required>
+                    </div>
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+            {% if prediction_result %}
+            <div class="prediction">
+                <div class="input_data">
+                    <h3>Input Data:</h3>
+                    <ul class="inputs">
+                        <li>Diagnosis: {{ prediction_result.input_data.diagnosis }}</li>
+                        <li>Radius Mean: {{ prediction_result.input_data.radius_mean }}</li>
+                        <li>Texture Mean: {{ prediction_result.input_data.texture_mean }}</li>
+                        <li>Perimeter Mean: {{ prediction_result.input_data.perimeter_mean }}</li>
+                        <li>Area Mean: {{ prediction_result.input_data.area_mean }}</li>
+                        <li>Smoothness Mean: {{ prediction_result.input_data.smoothness_mean }}</li>
+                        <li>Compactness Mean: {{ prediction_result.input_data.compactness_mean }}</li>
+                        <li>Concavity Mean: {{ prediction_result.input_data.concavity_mean }}</li>
+                        <li>Concave Points Mean: {{ prediction_result.input_data.concave_points_mean }}</li>
+                        <li>Symmetry Mean: {{ prediction_result.input_data.symmetry_mean }}</li>
+                        <li>Radius SE: {{ prediction_result.input_data.radius_se }}</li>
+                        <li>Perimeter SE: {{ prediction_result.input_data.perimeter_se }}</li>
+                        <li>Area SE: {{ prediction_result.input_data.area_se }}</li>
+                        <li>Compactness SE: {{ prediction_result.input_data.compactness_se }}</li>
+                        <li>Concavity SE: {{ prediction_result.input_data.concavity_se }}</li>
+                        <li>Concave Points SE: {{ prediction_result.input_data.concave_points_se }}</li>
+                        <li>Radius Worst: {{ prediction_result.input_data.radius_worst }}</li>
+                        <li>Texture Worst: {{ prediction_result.input_data.texture_worst }}</li>
+                        <li>Perimeter Worst: {{ prediction_result.input_data.perimeter_worst }}</li>
+                        <li>Area Worst: {{ prediction_result.input_data.area_worst }}</li>
+                        <li>Smoothness Worst: {{ prediction_result.input_data.smoothness_worst }}</li>
+                        <li>Compactness Worst: {{ prediction_result.input_data.compactness_worst }}</li>
+                        <li>Concavity Worst: {{ prediction_result.input_data.concavity_worst }}</li>
+                        <li>Concave Points Worst: {{ prediction_result.input_data.concave_points_worst }}</li>
+                        <li>Symmetry Worst: {{ prediction_result.input_data.symmetry_worst }}</li>
+                        <li>Fractal Dimension Worst: {{ prediction_result.input_data.fractal_dimension_worst }}</li>
+                    </ul>
+                </div>
+                <div class="output_data">
+                    <h3>Prediction Result:</h3>
+                    <p>The predicted diagnosis is: <strong>{{ prediction_result.prediction }}</strong></p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Breast Cancer Disease Detection</p>
+    </footer>
+</body>
+</html>

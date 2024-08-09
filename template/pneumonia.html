@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia disease detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prediction.css')}}">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index')}}">Main</a></li>
+                <li><a href="{{ url_for('disease_page', disease='BreastCan')}}">BreastCan</a></li>
+                <li><a href="{{ url_for('disease_page', disease='diabetes')}}">Diabetes</a></li>
+                <li><a href="{{ url_for('disease_page', disease='alzheimer')}}">Alzheimer</a></li>
+                <li><a href="{{ url_for('disease_page', disease='brain_tumor')}}">brain tumor</a></li>
+                <li><a href="{{ url_for('disease_page', disease='covid19')}}">Covid 19</a></li>
+                <li><a href="{{ url_for('disease_page', disease='pneumonia')}}">pneumonia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Pneumonia disease Prediction</h1>
+            </section>
+            <form action="" method="post" enctype="multipart/form-data" id="image-form">
+                <img src="{{ url_for('static',filename='images/pneumonia.jpg') }}" alt="pneumonia">
+                <h2>Upload your image</h2>
+                <input type="file" name="image" id="image" accept="image/*" required>
+                <button type="submit">Predict</button>
+            </form>
+            {% if prediction_result %}
+            <div class="prediction">
+                <h2>Prediction Result:</h2>
+                <div class="result">
+                    <img src="{{ url_for('static', filename=prediction_result.file_path.split('static/')[1]) }}" alt="Uploaded Image">
+                    <p>Prediction: {{ prediction_result.prediction }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+    </main>
+    <footer>
+        <p>© 2024 Pneumonia Disease Detection</p>
+    </footer>
+    
+</body>
+</html>

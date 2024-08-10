@@ -1,5 +1,16 @@
 # HeathAI: Intelligent Disease Detection
 
+![index1](ResultPhotos/index.png)
+![index1](ResultPhotos/index2.png)
+![index1](ResultPhotos/alzheimer1.png)
+![index1](ResultPhotos/alzheimer2.png)
+![index1](ResultPhotos/brain_tumor1.png)
+![index1](ResultPhotos/brain2.png)
+![index1](ResultPhotos/diabetes1.png)
+![index1](ResultPhotos/diabertes2.png)
+![index1](ResultPhotos/pneumoni1.png)
+![index1](ResultPhotos/pneumoniia2.png)
+
 ## 🔻AI in Healthcare: An Overview🔻
 
 Artificial Intelligence (AI) is revolutionizing healthcare by enhancing diagnostic accuracy, personalizing treatment plans, improving patient outcomes, and optimizing operational efficiency. The integration of AI into healthcare systems has the potential to address critical challenges such as rising costs, uneven access to care, and the increasing complexity of medical data.

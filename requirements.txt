@@ -29,6 +29,7 @@ opt-einsum==3.3.0
 optree==0.12.1
 packaging==24.1
 pandas==2.2.2
+pillow==10.4.0
 protobuf==4.25.4
 Pygments==2.18.0
 python-dateutil==2.9.0.post0

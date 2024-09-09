@@ -122,7 +122,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.healthai
+.healthaivenv
 .env
 .venv
 env/

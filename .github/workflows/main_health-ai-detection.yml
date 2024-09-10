@@ -74,5 +74,4 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'Health-Ai-Detection'
-          slot-name: 'Production'
-          
+          package: './release.zip'

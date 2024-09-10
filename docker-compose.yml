@@ -1,9 +1,0 @@
-services:
-  flask-app:
-    build: .
-    container_name: flask-health-ai
-    ports:
-      - "8000:8000" 
-    environment:
-      - AZURE_PORT=8000  
-      - .:/app

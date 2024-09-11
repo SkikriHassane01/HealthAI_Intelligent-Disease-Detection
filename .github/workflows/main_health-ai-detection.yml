@@ -44,7 +44,6 @@ jobs:
           -x "research internship.docx" \
           -x "research internship.pdf" \
           -x "todo_list.todo" \
-          -i "Models/*"
       
 
       - name: Upload artifact for deployment jobs

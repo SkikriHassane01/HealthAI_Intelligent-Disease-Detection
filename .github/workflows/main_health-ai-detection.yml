@@ -84,5 +84,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Health-Ai-Detection'
-          package: './release.zip'
+            app-name: 'health-ai-detection'
+            slot-name: 'health-ai-detection-healthai'
+            publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}

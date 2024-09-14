@@ -85,5 +85,5 @@ jobs:
         id: deploy-to-webapp
         with:
             app-name: 'health-ai-detection'
-            slot-name: 'health-ai-detection-healthai'
+            slot-name: 'health-ai-detection'
             publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}

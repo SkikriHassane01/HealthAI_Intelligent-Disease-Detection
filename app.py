@@ -68,11 +68,11 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 #load models
 models = {
-    'alzheimer': load_model('./Models/alzheimer_model.keras'),
     'brain_tumor': load_model('./Models/Brain_tumor_model.keras'),
-    'breast_cancer': load_model('./Models/breast_cancer_model.pkl'),
+    'alzheimer': load_model('./Models/alzheimer_model.keras'),
+    'breast_cancer': pickle.load(open('./Models/breast_cancer_model.pkl', 'rb')),
     'covid': load_model('./Models/covid_model.h5'),
-    'diabetes': load_model('./Models/diabetes_model.pkl'),
+    'diabetes': joblib.load('Models/diabetes_model.pkl'),
     'pneumonia': load_model('./Models/pneumia_model.keras'),
 }
 

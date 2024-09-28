@@ -123,9 +123,11 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
-
+*.ppk
+*.pem
+*.lnk
 # Environments
-.healthaivenv
+.healthai
 .env
 .venv
 env/

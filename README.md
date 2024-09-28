@@ -1,5 +1,5 @@
 # HeathAI: Intelligent Disease Detection
-
+## [you can see the website live here](http://13.60.250.176:8000/)
 ![index1](ResultPhotos/index.png)
 ![index1](ResultPhotos/index2.png)
 ![index1](ResultPhotos/alzheimer1.png)

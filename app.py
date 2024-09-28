@@ -68,12 +68,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 #load models
 models = {
-    'alzheimer': load_model('Models/alzheimer_model.keras'),
-    'brain_tumor': load_model('Models/Brain_tumor_model.keras'),
-    'breast_cancer': pickle.load(open('Models/breast_cancer_model.pkl', 'rb')),
-    'covid19': load_model('Models/covid_model.h5',compile=False),
     'diabetes': joblib.load('Models/diabetes_model.pkl'),
-    'pneumonia': load_model('Models/pneumia_model.keras')
 }
 
 model = models['covid19']

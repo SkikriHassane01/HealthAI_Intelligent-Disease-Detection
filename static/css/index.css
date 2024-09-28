@@ -16,6 +16,10 @@
     margin: 2em 0;
 }
 
+img{
+    width: 400px;
+    height: 300px;
+}
 .card{
     background: var(--secondary-color);
     border-radius: 10px;

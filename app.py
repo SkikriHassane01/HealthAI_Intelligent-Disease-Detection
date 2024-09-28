@@ -257,5 +257,5 @@ def handle_diabetes(request):
     prediction = diabetes_classes.get(int(prediction[0]), 'Unknown')
     return {'prediction': prediction, 'input_data': input_data.to_dict(orient='records')[0]}
 if __name__ == '__main__':
-    app.run(debug = True,host="0.0.0.0", port= 8000)
+    app.run(host="0.0.0.0", port= 8000)
 

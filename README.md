@@ -1,60 +1,87 @@
-# HeathAI: Intelligent Disease Detection
-## [you can see the website live here](http://ec2-13-60-36-230.eu-north-1.compute.amazonaws.com:8000/)
-![index1](ResultPhotos/index.png)
-![index1](ResultPhotos/index2.png)
-![index1](ResultPhotos/alzheimer1.png)
-![index1](ResultPhotos/alzheimer2.png)
-![index1](ResultPhotos/brain_tumor1.png)
-![index1](ResultPhotos/brain2.png)
-![index1](ResultPhotos/diabetes1.png)
-![index1](ResultPhotos/diabertes2.png)
-![index1](ResultPhotos/pneumoni1.png)
-![index1](ResultPhotos/pneumoniia2.png)
+# HealthAI: Intelligent Disease Detection
 
-## 🔻AI in Healthcare: An Overview🔻
+[![License: Apache](https://img.shields.io/badge/License-Apache-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-orange.svg)](https://www.tensorflow.org/)
 
-Artificial Intelligence (AI) is revolutionizing healthcare by enhancing diagnostic accuracy, personalizing treatment plans, improving patient outcomes, and optimizing operational efficiency. The integration of AI into healthcare systems has the potential to address critical challenges such as rising costs, uneven access to care, and the increasing complexity of medical data.
+> Revolutionizing healthcare with AI-powered disease detection
 
-## 🔻Introduction🔻
 
-This project aims to develop an AI platform for the quick and accurate diagnosis of major diseases. The initial focus will be on diseases with readily available datasets, including Brain Tumor, Alzheimer’s, Covid-19, pneumonia, breast cancer, and diabetes. The platform will allow users to upload medical images and receive a diagnosis within minutes, addressing issues such as delayed diagnosis, accessibility, cost, and accuracy of disease detection.
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Screenshots](#screenshots)
+- [Diseases Covered](#diseases-covered)
+- [Technology Stack](#technology-stack)
+- [Installation and Setup](#installation-and-setup)
+- [Usage Guide](#usage-guide)
+- [Project Stages](#project-stages)
+- [Data Sources](#data-sources)
+- [Project Goals](#project-goals)
+- [Conclusion](#conclusion)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🔻Business Understanding🔻
+## 🔍 Overview
 
-### 🔻Problem Statement🔻
+![](https://www.damanhealth.ae/wp-content/uploads/2023/12/shutterstock_451054186-scaled.jpg)
+HealthAI is an advanced artificial intelligence platform designed to provide quick and accurate diagnosis of major diseases. Our solution leverages deep learning algorithms to analyze medical images and data, enabling rapid disease detection and potentially life-saving early interventions.
 
-Diagnosing major diseases such as Covid-19, Alzheimer’s, and various cancers can be challenging and time-consuming. Traditional diagnostic methods often involve lengthy procedures and significant wait times for results, which can delay treatment and negatively impact patient outcomes.
+AI is revolutionizing healthcare by enhancing diagnostic accuracy, personalizing treatment plans, improving patient outcomes, and optimizing operational efficiency. Our platform addresses critical challenges such as rising healthcare costs, uneven access to care, and the increasing complexity of medical data.
 
-### 🔻Objectives🔻
+## ✨ Key Features
 
-Our objective is to develop an AI platform that can quickly and accurately detect diseases. We will start with 5 to 6 major diseases due to the availability of data and then extend it to other diseases. The diseases we will begin with are:
+- **Rapid Disease Detection**: Get preliminary diagnosis within minutes
+- **Multi-Disease Support**: Currently supporting 6 major diseases
+- **User-Friendly Interface**: Simple upload process for medical images
+- **High Accuracy**: State-of-the-art AI models trained on extensive datasets
 
-- Brain Tumor
-- Alzheimer’s
-- Covid-19
-- Pneumonia
-- Breast Cancer
-- Diabetes
+## 📸 Screenshots
 
-### 🔻Goals🔻
+<details>
+<summary>View Application Screenshots</summary>
 
-The primary goals of this project are to:
+### Home Page
+![Home Page](ResultPhotos/index.png)
+![Home Page Features](ResultPhotos/index2.png)
 
-1. **Reduce Diagnostic Delays:** Provide rapid diagnosis to expedite treatment and improve patient outcomes.
-2. **Improve Accessibility:** Ensure that individuals can access diagnostic services regardless of their location.
-3. **Lower Costs:** Develop a cost-effective diagnostic tool to make healthcare more affordable.
-4. **Enhance Accuracy:** Ensure high accuracy in disease detection to minimize the risk of misdiagnosis.
+### Alzheimer's Detection
+![Alzheimer's Detection](ResultPhotos/alzheimer1.png)
+![Alzheimer's Results](ResultPhotos/alzheimer2.png)
 
-### 🔻Data Sources🔻
+### Brain Tumor Detection
+![Brain Tumor Detection](ResultPhotos/brain_tumor1.png)
+![Brain Tumor Results](ResultPhotos/brain2.png)
 
-We will use publicly available datasets for our project:
+### Diabetes Detection
+![Diabetes Detection](ResultPhotos/diabetes1.png)
+![Diabetes Results](ResultPhotos/diabertes2.png)
 
-- [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data)
-- [Alzheimer’s Dataset](https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images/data)
-- [Covid-19 Chest X-ray Dataset](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset)
-- [Pneumonia Chest X-ray Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
-- [Breast Cancer Dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset)
-- [Diabetes Data Set](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
+### Pneumonia Detection
+![Pneumonia Detection](ResultPhotos/pneumoni1.png)
+![Pneumonia Results](ResultPhotos/pneumoniia2.png)
+</details>
+
+## 🔬 Diseases Covered
+
+Our AI platform currently detects the following diseases:
+
+1. **Brain Tumor** - Analysis of MRI scans
+2. **Alzheimer's Disease** - Detection using brain imaging
+3. **COVID-19** - Identification from chest X-rays
+4. **Pneumonia** - Detection from chest X-rays
+5. **Breast Cancer** - Analysis of mammograms and clinical data
+6. **Diabetes** - Prediction based on patient data
+
+## 💻 Technology Stack
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Python, Flask
+- **AI/ML**: TensorFlow, Keras
+- **Deployment**: AWS EC2
+- **Data Processing**: NumPy, Pandas, OpenCV
+
+## 🚀 Installation and Setup
 
 ## 🔻Project Stages🔻
 
@@ -84,6 +111,26 @@ We will evaluate the models using diagnostic measures such as the ROC curve to d
 
 We will deploy the model and gather feedback from stakeholders to refine and improve the system.
 
-### 🔻Conclusion🔻
+## 🔻Data Sources🔻
+
+We will use publicly available datasets for our project:
+
+- [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data)
+- [Alzheimer’s Dataset](https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images/data)
+- [Covid-19 Chest X-ray Dataset](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset)
+- [Pneumonia Chest X-ray Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+- [Breast Cancer Dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset)
+- [Diabetes Data Set](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
+
+## 🔻Project Goals🔻
+
+The primary goals of this project are to:
+
+1. **Reduce Diagnostic Delays:** Provide rapid diagnosis to expedite treatment and improve patient outcomes.
+2. **Improve Accessibility:** Ensure that individuals can access diagnostic services regardless of their location.
+3. **Lower Costs:** Develop a cost-effective diagnostic tool to make healthcare more affordable.
+4. **Enhance Accuracy:** Ensure high accuracy in disease detection to minimize the risk of misdiagnosis.
+
+## 🔻Conclusion🔻
 
 This AI healthcare detection project will address critical issues in the medical field, providing faster, more accessible, and accurate diagnoses, ultimately improving patient care and outcomes.
